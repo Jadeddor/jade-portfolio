@@ -1,6 +1,6 @@
 # jade dorsainvil — portfolio
 
-Personal portfolio and blog built with React. Live at [jadedorsainvil.vercel.app]([https://jadedorsainvil.vercel.app](https://jade-portfolio-zeta.vercel.app/))
+Personal portfolio and blog built with React. Live at [jade-portfolio](https://jade-portfolio-zeta.vercel.app/)
 
 ---
 
