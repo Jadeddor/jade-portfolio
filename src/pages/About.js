@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useReveal, Footer } from '../App';
-
-const PORTRAIT = 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=700&q=80';
+import heroImg from '../assets/jade_ny.jpg';
+const PORTRAIT = heroImg ;
 const EXP = [
   { date:'Jan 2025–Present', title:'Software Engineer Intern', org:'FDIC — Federal Deposit Insurance Corporation', desc:'Supporting enterprise HR systems with SQL, UAT testing, and system debugging during legacy migration (WebTA → GovTA). Built data validation workflows in a regulated federal environment.' },
   { date:'Feb 2024–Jun 2025', title:'Observatory Outreach Coordinator', org:'CSST, UMBC', desc:'Led public astronomy programs at the UMBC Observatory in collaboration with NASA Goddard. Managed volunteers, organised large-scale events, and translated complex science for diverse audiences.' },

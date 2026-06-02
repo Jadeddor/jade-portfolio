@@ -10,10 +10,10 @@ import falls from '../assets/falls.jpeg';
 const HERO_IMG = heroImg;
 const PHOTOS = [
   { src: mountain_p, cap: 'Systems at scale' },
-  { src: sea_view, cap: 'Music is a language too' },
+  { src: sea_view, cap: 'Surronded by complexities' },
   { src: valc_p , cap: 'Where I think best' },
   { src: sand_p, cap: 'Nature as architecture' },
-  { src: falls , cap: 'Nature as architecture' },
+  { src: falls , cap: 'Breath... Ready to code' },
 ];
 const MQ = ['Software Engineer','·','AI / ML','·','Computer Vision','·','Guitar','·','React','·','Nature','·','FastAPI','·','UX Design','·','LLM Integration','·','Curiosity','·'];
 
