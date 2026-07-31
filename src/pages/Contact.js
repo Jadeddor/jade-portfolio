@@ -42,7 +42,7 @@ export default function Contact() {
             <h1 className="fu">Let's build<br />something<br /><em>great.</em></h1>
             <p className="fu d2">
               Open to full-time roles, freelance projects, and genuinely interesting conversations.
-              If you have a problem worth solving — I want to hear about it.
+              If you have a problem worth solving, I want to hear about it.
             </p>
             <div className="contact-dets fu d3">
               <div>
@@ -51,7 +51,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="cdet-label">Location</p>
-                <p className="cdet-val">Maryland, USA 📍</p>
+                <p className="cdet-val">Maryland, USA</p>
               </div>
               <div>
                 <p className="cdet-label">Currently open to</p>
@@ -79,7 +79,7 @@ export default function Contact() {
             <div className="form-ok fu">
               <span className="form-ok-icon">✦</span>
               <h3>Message sent!</h3>
-              <p>Thanks for reaching out — I'll get back to you soon.</p>
+              <p>Thanks for reaching out. I'll get back to you soon.</p>
               <button className="btn btn-forest" style={{ marginTop:28 }}
                 onClick={() => { setSent(false); setF({ name:'', email:'', subject:'', message:'' }); }}>
                 Send another →

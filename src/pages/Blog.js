@@ -14,7 +14,7 @@ export default function Blog() {
         <p className="fu" style={{ fontSize:'.7rem', fontWeight:500, letterSpacing:'.16em', textTransform:'uppercase', color:'var(--mist)', marginBottom:20 }}>Writing</p>
         <h1 className="fu d1">Blog.</h1>
         <p className="fu d2">
-          I write. Not just about code — about life, curiosity, and everything in between.
+          I write. Not just about code, but life, curiosity, and everything in between.
         </p>
       </section>
 
@@ -29,13 +29,12 @@ export default function Blog() {
             I'm a writer first,<br />an engineer second.
           </h2>
           <p className="blog-feat-exc">
-            My blog lives on Substack. It's personal — honest writing about creativity,
-            growth, building things, and whatever's on my mind. Not a tech tutorial in sight.
-            New articles are on their way.
+            My writing lives on Substack: honest, personal essays about creativity,
+            growth, and building things. Not a tech tutorial in sight.
           </p>
           <p className="blog-feat-meta" style={{ display:'flex', alignItems:'center', gap:8 }}>
             <span style={{ width:8, height:8, background:'var(--spark)', borderRadius:'50%', display:'inline-block', animation:'pulse 2s ease-in-out infinite' }} />
-            Live on Substack · New posts coming soon
+            Latest posts below
           </p>
           <div style={{ marginTop:24, display:'flex', gap:12, flexWrap:'wrap' }}>
             <a href={SUBSTACK} target="_blank" rel="noreferrer" className="btn btn-forest">
@@ -48,26 +47,20 @@ export default function Blog() {
         </div>
       </div>
 
-      {/* Coming soon cards */}
+      {/* Real posts — pulled live from Substack */}
       <div style={{ padding:'64px 56px', borderBottom:'1px solid var(--border)' }}>
         <p className="rev" style={{ fontSize:'.7rem', fontWeight:500, letterSpacing:'.16em', textTransform:'uppercase', color:'var(--mist)', marginBottom:32 }}>
-          Articles in progress
+          Latest posts
         </p>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))', gap:1, background:'var(--border)' }}>
-          {[
-            { emoji:'🌿', title:'On building slowly and why speed is overrated' },
-            { emoji:'🎸', title:'What guitar taught me about learning anything' },
-            { emoji:'✦',  title:'Being a girl in tech — the honest version' },
-            { emoji:'🌙', title:'Night coding, solitude, and finding your rhythm' },
-            { emoji:'📖', title:'Books that quietly changed how I think' },
-            { emoji:'☕', title:'The ritual of making something every day' },
-          ].map(({ emoji, title }, i) => (
-            <div key={i} className="blog-card rev" style={{ transitionDelay:`${i * 0.06}s` }}>
-              <span style={{ fontSize:'1.4rem', lineHeight:1, marginBottom:8, display:'block' }}>{emoji}</span>
-              <h3 className="blog-title" style={{ opacity:.55 }}>{title}</h3>
-              <p className="blog-date" style={{ marginTop:'auto' }}>Coming soon</p>
-            </div>
-          ))}
+        <div className="rev" style={{ border:'1px solid var(--border)', borderRadius:14, overflow:'hidden', background:'var(--cream)' }}>
+          <iframe
+            src="https://jadedor.substack.com/embed"
+            title="Jade's latest Substack posts"
+            width="100%"
+            height="480"
+            style={{ border:'none', display:'block' }}
+            loading="lazy"
+          />
         </div>
       </div>
 

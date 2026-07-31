@@ -54,7 +54,7 @@ function Cursor() {
         <svg viewBox="0 0 36 44" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M18 2C10 2 3 8.5 3 17C3 26 10 34 18 42C26 34 33 26 33 17C33 8.5 26 2 18 2Z"
             fill="#1c3a2a" stroke="#2d5a3e" strokeWidth="1"/>
-          <text x="18" y="21" textAnchor="middle" fontSize="10" fill="#b8f03a" fontFamily="serif" fontStyle="italic">j</text>
+          <text x="18" y="21" textAnchor="middle" fontSize="10" fill="#e2d7ab" fontFamily="serif" fontStyle="italic">j</text>
         </svg>
       </div>
       <div className="cursor-trail" ref={trail} />
@@ -63,7 +63,7 @@ function Cursor() {
 }
 
 // ── Scroll reveal ────────────────────────────
-export function useReveal() {
+export function useReveal(deps = []) {
   const loc = useLocation();
   useEffect(() => {
     const els = document.querySelectorAll('.rev');
@@ -73,7 +73,8 @@ export function useReveal() {
     );
     els.forEach(el => io.observe(el));
     return () => io.disconnect();
-  }, [loc]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loc, ...deps]);
 }
 
 // ── Nav ──────────────────────────────────────
@@ -122,7 +123,7 @@ export function Footer() {
     <footer className="footer">
       <div className="footer-brand">
         <span className="footer-logo">jade <em>dorsainvil</em></span>
-        <p>Building at the intersection of AI, engineering, and design — with curiosity as the constant.</p>
+        <p>Building at the intersection of AI, agentic workflows, and design, with curiosity as the constant.</p>
         <div className="footer-socials">
           <a href="https://linkedin.com/in/jade-dorsainvil" target="_blank" rel="noreferrer">in</a>
           <a href="https://github.com/Jadeddor" target="_blank" rel="noreferrer">gh</a>
